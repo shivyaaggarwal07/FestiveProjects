@@ -1,0 +1,46 @@
+<html>
+<head>
+	<style>
+		html,body
+		{
+			position:relative;
+		}
+		img
+		{
+			width:100%;
+			height:100%;
+			object-fit:cover;
+			margin:0;
+		}
+		input
+		{
+			padding:0;
+			border:none;
+			position:absolute;
+			width:100%;
+			height:100%;
+			cursor:pointer;
+			mix-blend-mode: hue;
+			left:1px;
+			top:2px;
+		}
+		html,body {height:100%;}
+		body{margin:0;} 	
+	</style>
+
+</head>
+<body>
+
+	<img src ="crackers2.gif">
+	<input type ="color" value ="#00ff00">
+	<marquee style ="z-index:2;position:absolute;left:33px;top:15px;font-family:cursive;font-size:50pt;color:gold;height:250px;scroll-behavior: 7;direction:top;"><b><i>🤩HAPPY DIWALI🤩 <h1 id="username" style="z-index:2;position:absolute;left:15%;top:15px;font-family:cursive;font-size:50pt;color:gold;height:250px;scroll-behavior: 7;direction:top;"></h1></i></b></marquee>
+	<script>
+		var name = prompt("Enter your name")
+		alert("Happy Diwali " + name);
+		alert("You can change the color of fireworks by just clicking on it.Then change the number in the palette");
+		var heading = document.querySelector("#username");
+		heading.innerHTML = name;
+	</script>
+</body>
+</html>
+
